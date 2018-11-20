@@ -12,9 +12,18 @@ public class ArrayOrderedList<T> extends ArrayList<T> implements OrderedListADT<
     public void add(T element) {
         if(element instanceof Comparable){
             int i=0;
-            while(i<rear){
-                
+            boolean scan=false;
+            while(i<rear && scan==false){
+                if(((Comparable)list[i]).compareTo(element)<0){
+                    i++;
+                }else{
+                    scan=true;
+                }
             }
+            if(scan){
+
+            }
+
         }else{
 
         }
