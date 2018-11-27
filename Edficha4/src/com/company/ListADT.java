@@ -8,7 +8,7 @@ public interface ListADT<T> extends Iterable<T>{
      *
      * @return  the first element from this list
      */
-    public T removeFirst ();
+    public T removeFirst () throws EmptyCollectionException;
     /**
      * Removes and returns the last element from this list.
      *

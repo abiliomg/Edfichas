@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Iterator;
+
 public class Main {
 //Exercicio 3 parte 2;
     /*public static void main(String[] args) {
@@ -39,7 +41,18 @@ public class Main {
     }
 
     */
+//ficha 7 exercicio 2
+    /*
     public static void main(String[] args) {
+        DoubleOrderedList nova1=new DoubleOrderedList();
+        nova1.add("teste1");
+        nova1.add("teste2");
+        nova1.add("teste3");
+        nova1.add("teste4");
+        nova1.print(nova1.front);
+
     }
+    */
+
     }
-}
+

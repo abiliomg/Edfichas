@@ -26,7 +26,7 @@ public class LinkedQueue<T> implements QueueADT<T> {
         if (isEmpty())
             return null;
 
-        T result = front.getElem();
+        T result = front.getElement();
         front = front.getNext();
         count--;
 
@@ -41,7 +41,7 @@ public class LinkedQueue<T> implements QueueADT<T> {
         if (isEmpty())
            return null;
 
-        return front.getElem();
+        return front.getElement();
     }
 
     @Override
@@ -58,7 +58,7 @@ public class LinkedQueue<T> implements QueueADT<T> {
         Node<T> aux=front;
         String results="";
         while(aux!=null){
-            results=results+aux.getElem();
+            results=results+aux.getElement();
             aux=aux.getNext();
         }
         return results;
